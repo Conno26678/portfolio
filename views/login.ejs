@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .cat {
+            float: left;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+        }
+
+        .silly {
+            float: right;
+            top: 0;
+            right: 0;
+            position: absolute;
+        }
+
+        .container {
+        position: absolute;
+        bottom: 400px;
+        left: 120px;
+        }
+
+        .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <form action="/login" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <button type="submit">Login</button>
+    </form>
+    <img class=cat src="/img/garfield.png" alt="A cat name garfield" width="500" height="500">
+    <img class=silly src="/img/among.png" alt="Cyan astronaut" width="200" height="200">
+    <!-- <img class=bubble src="/img/bubble.png" alt="text bubble" width="400" height="400"> -->
+    <div class="container">
+        <img src="/img/bubble.png" alt="text bubble" width="400" height="400">
+        <div class="centered">Yeager Enterprises will never ask for your password. Only YOU can remeber your password.</div>
+    </div>
+
+</body>
+</html>
