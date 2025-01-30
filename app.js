@@ -38,6 +38,10 @@ app.get('/game1', (req, res) => {
     res.render('game1');
 });
 
+app.get('/chat', (req, res) => {
+    res.render('chat');
+});
+
 //Login doesn't work yet i'll get to fixing it then
 
 app.post('/login', (req, res) => {
