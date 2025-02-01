@@ -16,13 +16,45 @@
             right: 0;
             position: absolute;
         }
+        button {
+            background-color: blue; 
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        button:hover {
+                transition: background-color 0.8s ease;
+                background-color: green;
+            }
+            .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            }
+            .smile {
+            float: left;
+            top:0;
+            left:0;
+            position: absolute;
+            }
     </style>
 </head>
 <body>
-    <h1> Hello this is my portfolio website</h1> 
-    <h2>This exists to prove that I know some of the things I say I do.</h2>
-    <h2>Login to see more of what I've done. <a href="/login"><button type="button" href="login.ejs">Click Me To Login</button></a></h2>
-    <img src="/img/smiley.png" alt="A smiley face" width="500" height="500">
+    <div class="container">
+        <h1> Hello this is my portfolio website</h1> 
+        <h2>This exists to prove that I know some of the things I say I do.</h2>
+        <h2>Click to see more of what I've done.</h2>
+        <h2><a href="/home"><button type="button" href="home.ejs">Click Me</button></a></h2>
+    </div>
+    <img class=smile src="/img/smiley.png" alt="A smiley face" width="500" height="500">
     <img class=JS_img src="/img/javascript.png" alt="Javascript logo" width="500" height="500">
 </body>
 </html>

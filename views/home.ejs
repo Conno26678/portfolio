@@ -15,6 +15,28 @@
         right: 0;
         position: absolute;
     }
+    button {
+        background-color: blue; 
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+    .weez {
+        float: left;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+    }
+    button:hover {
+                transition: background-color 0.8s ease;
+                background-color: green;
+            }
 </style>
     
 
@@ -23,7 +45,8 @@
     <h1>Hello and welcome to my virtual portfolio! I will have some of my work here and a page about me.</h1>
     <h2>About Me Page <button onclick="location.href='aboutMe'">Click Me</button></h2>
     <h2> Pew Pew Game <button onclick="location.href='game1'">Perchance a game?</button></h2>
-    <h2>Chatting  <button onclick="location.href='chat'">Click to chat</button></h2>
     <img class=connor src="/img/connor2.png" alt="Connor Yeager" width="500" height="500">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/SChnJDfmrSU?si=enimd23_tVkAHUzh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe class="weez" width="560" height="315" src="https://www.youtube.com/embed/o4F3J5zFM8M?si=eln71PeUH13jbF_p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </body>
 </html>
